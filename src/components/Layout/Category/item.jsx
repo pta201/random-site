@@ -1,0 +1,23 @@
+import React from "react";
+import Image from "next/image";
+const CategoryItem = (props) => {
+  const imgSrc = props.imgSrc;
+  const title = props.title;
+  const className = props.className;
+  return (
+    <div
+      className={`card flex-auto bg-white shadow-lg lg:w-1/4 hover:border hover:border-accent ${className}`}
+    >
+      <div className="card-body p-4">
+        <div className="flex flex-col flex-1 items-center ">
+          <div className="font-bold text-lg ">{title}</div>
+          <div className="w-full">
+            <Image width={4} height={3} layout="responsive" src={imgSrc} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CategoryItem;
