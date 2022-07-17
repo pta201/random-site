@@ -1,8 +1,9 @@
 import Slider from "@/layout/Slider";
 import React from "react";
 import Footer from "../Footer";
-import Header from "../Header";
+import Header from "@/layout/Header/LandingPage";
 import Menu from "../Menu";
+
 const LandingPageLayout = (props) => {
   return (
     <div className="flex flex-col min-h-screen">

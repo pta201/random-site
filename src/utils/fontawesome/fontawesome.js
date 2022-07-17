@@ -8,13 +8,16 @@ import {
   faCode,
   faHighlighter,
   faPhone,
+  faLocationDot,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faCode,
   faHighlighter,
   faCircleCheck,
   faPhone,
-  faArrowRotateLeft
-
+  faArrowRotateLeft,
+  faLocationDot,
+  faEnvelope
   // more icons go here
 );

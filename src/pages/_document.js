@@ -17,7 +17,7 @@ export default function Document() {
         <NextScript />
         <Script
           strategy="beforeInteractive"
-          crossOrigin="anonymous"
+          // crossOrigin={"anonymous"}
           src={`https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0&appId=1326553517365456&autoLogAppEvents=1`}
           nonce="B7oynq4a"
         ></Script>

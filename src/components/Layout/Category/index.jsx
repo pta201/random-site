@@ -1,12 +1,10 @@
-import Image from "next/image";
 import React from "react";
 import CategoryItem from "./item";
-const Category = () => {
+const Category = (props) => {
+  const categories = props.categories;
   return (
-    <div className="flex flex-col font-bold gap-2">
-      <div className="text-center text-3xl mb-2 font-bold">
-        Danh mục sản phẩm
-      </div>
+    <div className={`flex flex-col font-bold gap-2 ${props.className}`}>
+      <div className="text-center text-3xl font-bold">Danh mục sản phẩm</div>
       <div className="flex flex-col w-full gap-4 lg:flex-row">
         <div className="flex w-full gap-4">
           <CategoryItem
